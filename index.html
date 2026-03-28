@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CULTURE | Buy. Sell. Trade.</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">CULTURE</div>
+        <nav>
+            <ul>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#sell">Sell To Us</a></li>
+                <li><a href="#locations">Locations</a></li>
+                <li><a href="#social">Community</a></li>
+            </ul>
+            <div class="theme-switch-wrapper">
+                <span title="Dark Mode">🌙</span>
+                <label class="theme-switch" for="checkbox" title="Toggle Light/Dark Mode">
+                    <input type="checkbox" id="checkbox" />
+                    <div class="slider"></div>
+                </label>
+                <span title="Light Mode">☀️</span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Define The Culture</h1>
+        <p>Detroit's premier destination for buying, selling, and trading the most exclusive sneakers and streetwear.</p>
+        <div class="btn-group">
+            <a href="#shop" class="btn btn-primary">Shop The Heat</a>
+            <a href="#sell" class="btn btn-secondary">Cash Out Today</a>
+        </div>
+    </section>
+
+    <section class="mission-banner">
+        <strong>Welcome Home Family!</strong>
+        "Where Fashion, Film, Art, Music & Sports live under 1 roof. Your premiere source for all high-end designer & streetwear clothing & footwear. An experience you’ll write home about. Join the Culture!"
+    </section>
+
+    <section class="latest-heat" id="shop">
+        <h2 class="section-title">Fresh in the Shop</h2>
+        <div class="grid-container">
+            <div class="product-card">
+                <div class="placeholder-img">Shoe Image Here</div>
+                <h3>Exclusive Sneaker 1</h3>
+                <p style="color: var(--text-muted); margin-top: 10px;">Condition: DS</p>
+            </div>
+            <div class="product-card">
+                <div class="placeholder-img">Apparel Image Here</div>
+                <h3>Vintage Tee</h3>
+                <p style="color: var(--text-muted); margin-top: 10px;">Condition: 9/10</p>
+            </div>
+            <div class="product-card">
+                <div class="placeholder-img">Shoe Image Here</div>
+                <h3>Exclusive Sneaker 2</h3>
+                <p style="color: var(--text-muted); margin-top: 10px;">Condition: VNDS</p>
+            </div>
+            <div class="product-card">
+                <div class="placeholder-img">Accessories Here</div>
+                <h3>Streetwear Accessory</h3>
+                <p style="color: var(--text-muted); margin-top: 10px;">Condition: DS</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="locations" id="locations">
+        <h2 class="section-title">Visit Us</h2>
+        <div class="locations-grid">
+            <div class="location-card">
+                <h3>Culture Downtown</h3>
+                <p><strong>Address:</strong><br>1228 Griswold St<br>Detroit, MI 48226</p>
+                <p><strong>Hours:</strong><br>
+                Mon - Fri: 11:00 AM - 8:00 PM<br>
+                Saturday: 12:00 PM - 8:00 PM<br>
+                Sunday: 12:00 PM - 6:00 PM</p>
+                <p><strong>Phone:</strong> (313) 262-6628</p>
+            </div>
+
+            <div class="location-card">
+                <h3>Cul•tureDET</h3>
+                <p><strong>Address:</strong><br>19327 Livernois<br>Detroit, MI 48221</p>
+                <p><strong>Hours:</strong><br>
+                Mon - Sat: 12:00 PM - 8:00 PM<br>
+                Sunday: 12:00 PM - 6:00 PM</p>
+                <p><strong>Phone:</strong> (313) 569-1312</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="social-section" id="social">
+        <div class="social-text">
+            <h2>Join The Movement</h2>
+            <p>Stay updated on the latest drops, exclusive instore events, and community highlights. Follow us on Facebook to see what is landing on the shelves in real-time.</p>
+            <a href="https://www.facebook.com/culturedet313/" target="_blank" class="btn btn-primary">Follow @culturedet313</a>
+        </div>
+        <div class="fb-container">
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fculturedet313%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+    </section>
+
+    <script>
+        const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+
+        function switchTheme(e) {
+            if (e.target.checked) {
+                document.body.classList.add('light-mode');
+            } else {
+                document.body.classList.remove('light-mode');
+            }    
+        }
+
+        toggleSwitch.addEventListener('change', switchTheme, false);
+    </script>
+</body>
+</html>
